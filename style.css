@@ -167,6 +167,9 @@ nav a {
 
 /* Mobile screen */
 @media (max-width: 768px) {
+    body {
+    margin: 15px;
+}
     nav {
         flex-direction: column;
         align-items: center;
@@ -190,5 +193,32 @@ nav a {
     nav a {
         font-size: 16px;
     }
+    nav a {
+    font-size: 16px;
 }
+   .project-container {
+    flex-direction: column;
+    gap: 25px;
+}
+ .project-text {
+    width: 100%;
+}
+ .project-image-container {
+    width: 100%;
+} 
+ .project-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+  .project-text h3 {
+    margin-top: 0;
+}
+
+.project-text p {
+    font-size: 17px;
+}  
+    
+}
+
 
