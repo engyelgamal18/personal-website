@@ -257,5 +257,18 @@ nav a {
 .contact-form button:hover {
     background-color: #163a5c;
 }
+#form-status {
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success-message {
+    color: #26734d;
+}
+
+.error-message {
+    color: #b42318;
+}
 
 
