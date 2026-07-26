@@ -130,10 +130,12 @@
         </a>
     </div>
 
-    <form
-        action="https://formspree.io/f/mvzedpke"
-        method="POST"
-        class="contact-form"
+   <form
+    id="contact-form"
+    action="https://formspree.io/f/mvzedpke"
+    method="POST"
+    class="contact-form"
+>
     >
 
         <input
@@ -160,12 +162,50 @@
         <button type="submit">
             Send Message
         </button>
-
+<p id="form-status"></p>
     </form>
 
 </section>
 <footer>
     <p>© 2026 Dr. Engy Elgamal. All rights reserved.</p>
 </footer>
+   <script>
+    const form = document.getElementById("contact-form");
+    const formStatus = document.getElementById("form-status");
+
+    form.addEventListener("submit", async function (event) {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+
+        try {
+            const response = await fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    Accept: "application/json"
+                }
+            });
+
+            if (response.ok) {
+                formStatus.textContent =
+                    "Thank you, I'll get back to you as soon as possible.";
+
+                formStatus.className = "success-message";
+                form.reset();
+            } else {
+                formStatus.textContent =
+                    "Sorry, there was a problem sending your message.";
+
+                formStatus.className = "error-message";
+            }
+        } catch (error) {
+            formStatus.textContent =
+                "Sorry, there was a problem sending your message.";
+
+            formStatus.className = "error-message";
+        }
+    });
+</script> 
 </body>
 </html>
