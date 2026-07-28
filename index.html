@@ -1,6 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
@@ -32,34 +33,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <nav>
-    <h3><i class="fa-solid fa-tooth"></i> Dr. Engy Elgamal</h3>
 
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-<section id="home"></section>
-    <h2>Dentist | AI in Dental Imaging</h2>
+    <nav>
+        <h3>
+            <i class="fa-solid fa-tooth"></i>
+            Dr. Engy Elgamal
+        </h3>
 
-  <p>
-    Exploring artificial intelligence to improve panoramic dental X-ray analysis and future dental care.
-</p>
-    </p>
-    <section>
-        <section id="about"></section>
-    <h2>About Me</h2>
-    <p>
-        Hi, I'm Dr. Engy Elgamal. I am a dentist with an interest in artificial intelligence and dental imaging. I enjoy learning how AI can be used to improve panoramic dental X-ray analysis and support future dental research.
-    </p>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-    <p>
-        I am currently learning about AI tools for medical image analysis and dental research. My goal is to understand how AI can support dentistry and improve panoramic dental X-ray analysis.
-    </p>
-</section>
+    <section id="home" class="hero">
+        <div class="hero-photo">
+            <img src="images/hero-image.jpg" alt="Panoramic dental X-ray on a computer screen">
+        </div>
+
+        <div class="hero-text">
+            <h1>Dr. Engy Elgamal</h1>
+            <h2>Dentist | AI in Dental Imaging</h2>
+
+            <p>
+                Exploring artificial intelligence to improve panoramic dental
+                X-ray analysis and future dental care.
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+
+        <div class="about-container">
+            <div class="about-photo">
+                <img src="images/profile.jpg" alt="Dr. Engy Elgamal">
+            </div>
+
+            <div class="about-text">
+                <p class="about-intro">
+                    Hi, I'm Dr. Engy Elgamal — a dentist exploring how AI can improve dental care.
+                </p>
+
+                <p>
+                    I have an interest in artificial intelligence and dental imaging, and I enjoy learning how AI can be used to improve panoramic dental X-ray analysis and support future dental research.
+                </p>
+
+                <p>
+                    I am currently learning about AI tools for medical image analysis and dental research. My goal is to understand how AI can support dentistry and improve panoramic dental X-ray analysis.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <section id="project">
     <h2>Current Project</h2>
@@ -93,31 +120,84 @@
     AI detection results on a panoramic dental X-ray.
 </p>
 
+
+    <!-- Paste HERE -->
+
+    <div class="xray-legend">
+        <h4>AI Detection Results</h4>
+
+        <div class="legend-item">
+            <span class="legend-color green"></span>
+            <p><strong>Green:</strong> Teeth (7 detected)</p>
+        </div>
+
+        <div class="legend-item">
+            <span class="legend-color blue"></span>
+            <p><strong>Light Blue:</strong> Orthodontic Treatment (20 detected)</p>
+        </div>
+
+        <div class="legend-item">
+            <span class="legend-color purple"></span>
+            <p><strong>Purple:</strong> Impacted Tooth (1 detected)</p>
         </div>
 
     </div>
+
+</div>
+        </div>
+
+    </div>
+
 </section>
 <section>
     <h2>Skills & Tools</h2>
 
     <div class="skills-list">
-    <span>Dentistry</span>
-    <span>Dental Imaging</span>
-    <span>Panoramic Dental X-rays</span>
-    <span>Artificial Intelligence</span>
-    <span>Medical Image Analysis</span>
-    <span>Roboflow</span>
-    <span>Claude Projects</span>
-</div>    
-    </ul>
+    <span>🦷 Dentistry</span>
+    <span>🩻 Dental Imaging</span>
+    <span>📸 Panoramic Dental X-rays</span>
+    <span>🤖 Artificial Intelligence</span>
+    <span>🧠 Medical Image Analysis</span>
+    <span>📦 Roboflow</span>
+    <span>💬 Claude Projects</span>
+</div>
 </section>
 <section id="future">
     <h2>Future Posts & Capstone</h2>
 
     <p>
-        This section will include future AI projects, dental imaging posts,
-        and my capstone work as I continue learning and building new projects.
+        As I continue learning, I plan to expand this portfolio with more AI
+    projects, dental imaging research, and my final capstone project.
     </p>
+
+    <div class="future-cards">
+
+        <div class="future-card">
+            <h3>🤖 AI Projects</h3>
+            <p>
+                More projects exploring artificial intelligence in dentistry and
+            medical imaging.
+            </p>
+        </div>
+
+        <div class="future-card">
+            <h3>🦷 Dental Imaging</h3>
+            <p>
+                Future work focused on panoramic dental X-rays, annotations, and
+            image analysis.
+            </p>
+        </div>
+
+        <div class="future-card">
+            <h3>🎓 Capstone Project</h3>
+            <p>
+                My final capstone project that combines my dental knowledge
+                with artificial intelligence.
+            </p>
+        </div>
+
+    </div>
+
 </section>
 <section id="contact">
     <h2>Contact</h2>
@@ -153,13 +233,12 @@
         </a>
     </div>
 
-   <form
+    <form
     id="contact-form"
     action="https://formspree.io/f/mvzedpke"
     method="POST"
     class="contact-form"
 >
-    >
 
         <input
             type="text"
@@ -185,14 +264,14 @@
         <button type="submit">
             Send Message
         </button>
-<p id="form-status"></p>
+
+        <p id="form-status"></p>
+        
+
     </form>
 
 </section>
-<footer>
-    <p>© 2026 Dr. Engy Elgamal. All rights reserved.</p>
-</footer>
-   <script>
+<script>
     const form = document.getElementById("contact-form");
     const formStatus = document.getElementById("form-status");
 
@@ -212,7 +291,7 @@
 
             if (response.ok) {
                 formStatus.textContent =
-                    "Thank you, I'll get back to you as soon as possible.";
+                    "Thank you,I'll get back to you soon as possible.";
 
                 formStatus.className = "success-message";
                 form.reset();
@@ -229,6 +308,6 @@
             formStatus.className = "error-message";
         }
     });
-</script> 
+</script>
 </body>
 </html>
