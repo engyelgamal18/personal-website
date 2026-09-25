@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://engy-elgamal.netlify.app/*"
+  to = "https://drengyelgamal.com/:splat"
+  status = 301
+  force = true
